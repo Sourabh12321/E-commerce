@@ -1,0 +1,148 @@
+/* Main Div Styling */
+.body {
+    margin-bottom: 50px;
+}
+
+.mainDiv {
+    background-color: #0f0617;
+    font-family: 'Noto Sans Bold', sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Common Box Styling */
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10%;
+    padding-right: 30px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.box.active {
+    opacity: 1;
+    display: block;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+/* Heading Styling */
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: orangered;
+}
+
+/* Description Styling */
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: orangered;
+}
+
+/* Input Fields Styling */
+input {
+    width: 95%;
+    padding: 10px;
+    background-color: rgb(213, 255, 255);
+    margin: 10px 0;
+    border: none;
+    border-width: 0;
+    border-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Line Styling */
+.line {
+    border-bottom: 1px solid orangered;
+    margin: 10px 0;
+}
+
+/* Button Styling */
+button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Toggle Login/Signup Link Styling */
+span, u {
+    color: orangered;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Forgot Password Link Styling */
+a {
+    color: orangered;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .box {
+        margin: 10px;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .box {
+        margin: 10px;
+        max-width: 220px;
+        padding: 15px;
+    }
+}

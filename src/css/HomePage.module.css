@@ -1,0 +1,146 @@
+.container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin-top: 50px;
+    /* padding: 0 20px; Added padding for small screens */
+}
+
+/* Hero Section */
+.hero {
+    background: url('../media/HomePageImages/backgroudImage.webp') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.heroContent h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+}
+.heroContent p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: white;
+
+}
+.orderButton {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.orderButton:hover {
+    background-color: darkorange;
+}
+
+/* Featured Items Section */
+.featuredItems {
+    margin: auto;
+    padding: 20px 20px;
+    /* margin: auto; */
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.featuredItems h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.itemCards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: auto;
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card h3 {
+    margin: 10px 0;
+}
+.card p {
+    color: #555;
+    margin: 0 10px 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.testimonialCards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+.testimonialCards .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .heroContent h1 {
+        font-size: 2.5em;
+    }
+    .heroContent p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroContent h1 {
+        font-size: 2em;
+    }
+    .heroContent p {
+        font-size: 1em;
+    }
+    .itemCards {
+        margin: auto;
+        /* gap: 5px; */
+        flex-direction: column; /* Stack items vertically */
+    }
+    .testimonialCards {
+        flex-direction: column; /* Stack testimonials vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    .heroContent h1 {
+        font-size: 1.5em;
+    }
+    .heroContent p {
+        font-size: 0.9em;
+    }
+    .orderButton {
+        padding: 8px 16px;
+    }
+    .featuredItems h2, .testimonials h2 {
+        font-size: 1.5em;
+    }
+}

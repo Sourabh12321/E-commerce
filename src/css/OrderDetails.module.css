@@ -1,0 +1,47 @@
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.order {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.order h2 {
+    margin-top: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.itemImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cancelButton {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancelButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.cancelButton:not(:disabled):hover {
+    background-color: #ff1a1a;
+}
